@@ -2,6 +2,9 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        fallingSpeed: {
+            default: 100,
+        }
         // foo: {
         //    default: null,
         //    url: cc.Texture2D,  // optional, default is typeof default
@@ -15,11 +18,11 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-
+        window.configuration = this;
     },
 
     // called every frame, uncomment this function to activate update callback
-    update: function (dt) {
-        this.node.y -= dt * window.configuration.fallingSpeed;
-    },
+    // update: function (dt) {
+
+    // },
 });
