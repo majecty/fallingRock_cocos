@@ -13,6 +13,7 @@ cc.Class {
 
     myOnButtonTapHandler: () ->
         cc.log("Button tap")
+        cc.director.loadScene("game")
 
     update: (dt) ->
         # do your update here
