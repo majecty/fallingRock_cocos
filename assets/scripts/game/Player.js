@@ -2,10 +2,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        rock: {
-            default: null,
-            type: cc.Prefab
-        }
         // foo: {
         //    default: null,
         //    url: cc.Texture2D,  // optional, default is typeof default
@@ -19,18 +15,20 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.initialRoutine = this.schedule(function () {
-            var newRock = cc.instantiate(this.rock);
-            // console.dir(newRock);
-            // console.log("instantiated " + this.node.x + ", " + this.node.y);
-            newRock.parent = this.node;
-            newRock.x = 0;
-            newRock.y = 0;
-        }, 1);
+        let listener = cc.EventListener.create({
+            event: cc.EventListener.KEYBOARD
+        });
+        listener.onKeyPressed = function (keyCode, event) {
+            cc.log('pressed key: ' + keyCode);
+        };
+        listener.onKeyReleased = function (keyCode, event) {
+            cc.log("released key: " + keyCode);
+        };
+        cc.eventManager.addListener(listener, this.node);
     },
 
     // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
+    update: function (dt) {
+        
+    },
 });
