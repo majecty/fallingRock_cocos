@@ -830,13 +830,13 @@
         "__id__": 23
       },
       {
-        "__id__": 28
+        "__id__": 25
+      },
+      {
+        "__id__": 27
       },
       {
         "__id__": 29
-      },
-      {
-        "__id__": 30
       }
     ],
     "_rotationX": 0,
@@ -894,11 +894,7 @@
       "width": 100,
       "height": 100
     },
-    "_children": [
-      {
-        "__id__": 24
-      }
-    ],
+    "_children": [],
     "_rotationX": 0,
     "_rotationY": 0,
     "_scaleX": 1,
@@ -919,102 +915,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 27
+        "__id__": 24
       }
     ],
     "_prefab": null,
     "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "rock",
-    "_objFlags": 0,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_parent": {
-      "__id__": 23
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 100,
-      "height": 100
-    },
-    "_children": [],
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_tag": -1,
-    "_opacityModifyRGB": false,
-    "_reorderChildDirty": false,
-    "_id": "2d82fnNSglK8aQtqgwmjcEJ",
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 25
-      },
-      {
-        "__id__": 26
-      }
-    ],
-    "_prefab": null,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 24
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "41c6af14-2954-4653-bd99-303d834e0e97"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "3c6e4aoGqVBJb3zQOe2trTr",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 24
-    },
-    "_enabled": true
   },
   {
     "__type__": "877a5fQdDZNDZSOhHQzC8+9",
@@ -1073,9 +978,25 @@
     "_reorderChildDirty": false,
     "_id": "2a8e77oyMBACboY9QenBycF",
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 26
+      }
+    ],
     "_prefab": null,
     "groupIndex": 0
+  },
+  {
+    "__type__": "877a5fQdDZNDZSOhHQzC8+9",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 25
+    },
+    "_enabled": true,
+    "rock": {
+      "__uuid__": "e5f04a14-c038-4676-8f61-baff3e29b50b"
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1122,9 +1043,25 @@
     "_reorderChildDirty": false,
     "_id": "170a75IBOBIOaiLtxorwPrw",
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 28
+      }
+    ],
     "_prefab": null,
     "groupIndex": 0
+  },
+  {
+    "__type__": "877a5fQdDZNDZSOhHQzC8+9",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 27
+    },
+    "_enabled": true,
+    "rock": {
+      "__uuid__": "e5f04a14-c038-4676-8f61-baff3e29b50b"
+    }
   },
   {
     "__type__": "cc.Node",
@@ -1171,9 +1108,25 @@
     "_reorderChildDirty": false,
     "_id": "ca19cOMYsZGkrcRwOIx9oVZ",
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 30
+      }
+    ],
     "_prefab": null,
     "groupIndex": 0
+  },
+  {
+    "__type__": "877a5fQdDZNDZSOhHQzC8+9",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 29
+    },
+    "_enabled": true,
+    "rock": {
+      "__uuid__": "e5f04a14-c038-4676-8f61-baff3e29b50b"
+    }
   },
   {
     "__type__": "cc.Widget",
